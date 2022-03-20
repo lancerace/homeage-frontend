@@ -13,7 +13,7 @@ This project was bootstrapped with
 You can read the specific Create React App Read me at `CRA-README.md`
 
 # Available Routes
-GET `/bookings` - List all the booking in a table
+GET `/api/bookings` - List all the booking in a table
 
 GET `/api/bookings/:bookingId` - Get a booking
 
