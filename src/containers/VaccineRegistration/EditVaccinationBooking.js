@@ -137,6 +137,9 @@ const EditVaccineRegistration = (props) => {
                   slot: state.date
                 })
                 alert(data.message);
+
+                window.location.href = `${`${process.env.PUBLIC_URL}/bookings`}`
+
               }}
             >
               Register!

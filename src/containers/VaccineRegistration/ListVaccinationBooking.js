@@ -45,13 +45,13 @@ function getBooking() {
 const VaccineRegistrationListing = (props) => {
   const [state, setState] = useState({ bookings: [] });
 
+  const fetchData = async () => {
+    const { data } = await axios.get(`${process.env.REACT_APP_API_ENDPOINT}/bookings`);
+    console.log(data);
+    setState({ ...state, bookings: data.bookings })
+  }
 
   useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await axios.get(`${process.env.REACT_APP_API_ENDPOINT}/bookings`);
-      console.log(data);
-      setState({ ...state, bookings: data.bookings })
-    }
     fetchData();
   }, [])
 
@@ -94,6 +94,8 @@ const VaccineRegistrationListing = (props) => {
                           const res = await axios.delete(`${process.env.REACT_APP_API_ENDPOINT}/bookings/${row.bookingId}`);
                           if(res.data.success)
                             alert(res.data.message);
+
+                            fetchData();
                         }}>
                           <DeleteIcon />
                         </Button>
