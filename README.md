@@ -1,6 +1,8 @@
 # Vaccine Booking App
 
-[Demo](https://demo-vaccine-center.netlify.app/)
+URL: https://homeage-69f83.web.app/
+
+[Demo](https://https://homeage-69f83.web.app/)
 
 To get you quickly started on the challenge, we have created this boilerplate as a guideline
 
@@ -9,6 +11,20 @@ This project was bootstrapped with
 - [Material UI](https://mui.com/)
 
 You can read the specific Create React App Read me at `CRA-README.md`
+
+# Available Routes
+GET `/bookings` - List all the booking in a table
+
+GET `/api/bookings/:bookingId` - Get a booking
+
+UPDATE `/api/bookings/:bookingId` - Update page of the booking
+
+DELETE `/api/bookings/:bookingId` - Delete a booking
+
+POST `/api/bookings` - Create a new Booking
+
+GET `/api/vaccination-centers` - Get all vaccination centers
+
 
 # What you need to do
 ## If using this boilerplate
@@ -21,13 +37,6 @@ You can read the specific Create React App Read me at `CRA-README.md`
 Yes, you can choose build your own ui, but we typically find that people spend too much time on these stuff, and we want you to focus on building the important and complicated things
 
 If you still choose to go ahead, you can simply ignore the rest of the readme here
-
-# Available Routes
-`/bookings` - List all the booking in a table
-
-`/bookings/:bookingId` - Update page of the booking
-
-`/` - Create a new Booking
 
 # Containers
 ## EditVaccineRegistration
